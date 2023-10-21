@@ -1,0 +1,26 @@
+$default-color: #fee440;
+$warm-color: #ed6a5a;
+$cool-color: #00bbf9;
+
+.default-div {
+    width: 100px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: $default-color;
+    color: black;
+}
+
+.warm-div {
+    @extend .default-div;
+    background-color: $warm-color;
+    color: black;
+}
+
+.cool-div {
+    @extend .default-div;
+    background-color: $cool-color;
+    color: black;
+}
