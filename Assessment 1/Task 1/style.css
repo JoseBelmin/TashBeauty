@@ -3,52 +3,52 @@
     padding: 0;
 }
 
-body{
+body{ /* To center main content */
     background-color: #f6f6f7;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
+.container { /* To set content background color and size */
     background-color: #fefefd;
-    width: 1050px;
+    width: 1095px; /* Multiply the three picture sizes to fit the bg */
 }
 
-header img {
-    padding: 20px 0px 20px 15px;
+header img { /* Website Logo */
+    padding: 20px 0px 20px 20px;
     width: 70px;
 }
 
-.gallery {
+.gallery { /* Picture gallery layout */
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 365px);
 }
 
-.gallery img {
-    width: 350px;
-    height: 350px;
+.gallery img { /* Picture sizing */
+    width: 365px;
+    height: 365px;
 }
 
-h2 {
-    padding: 20px 20px 20px 20px;
+h2 { /* Text formatting */
+    padding: 15px 15px 15px 15px;
     font-family: 'Roboto Mono', monospace;
-    font-size: small;
+    font-size: 13px;
     font-weight: 500;
-    line-height: 1.8;
+    line-height: 22px;
 }
 
-footer{
+footer{ /* Footer banner */
     padding: 24px 0px 24px 0px;
     text-align: center;
     background-color: #14181d;
     color: #FFFFFF;
     font-family: 'Anonymous Pro', monospace;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-@media (width = 1024px) {
+@media (width = 1024px) { /* For when the screen size is exactly at 1024px */
     .container {
         width: 1024px;
     }
@@ -58,7 +58,7 @@ footer{
         width: 55px;
     }
 
-    .gallery {
+    .gallery { /* Set picures to automatically fill gaps */
         grid-template-columns: repeat(3, auto-fill);
     }
 
@@ -67,7 +67,7 @@ footer{
         height: 324px;
     }
 
-    h2 {
+    h2 { /* For easier reading */
         font-size: 15px;
         line-height: 25px;
     }
@@ -78,7 +78,7 @@ footer{
     }
 }
 
-@media (width <= 800px) {
+@media (width <= 800px) { /* For when the screen size is less than or equal to 800px */
     .container {
         width: 800px;
     }
@@ -109,7 +109,7 @@ footer{
     }
 }
 
-@media (width <= 480px) {
+@media (width <= 480px) { /* For when the screen size is less than or equal to 480px */
     .container {
         width:480px;
     }
