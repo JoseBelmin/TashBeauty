@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.box {
+  width: 25vw;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: Green;
+}
+
+.purple {
+  background-color: Purple;
+}
+
+.blue {
+  background-color: Blue;
+}/*# sourceMappingURL=style.css.map */

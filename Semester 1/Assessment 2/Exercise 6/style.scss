@@ -1,0 +1,33 @@
+$myColor1: Green;
+$myColor2: Purple;
+$myColor3: Blue;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+.box {
+  width: 25vw;
+  border-radius: 5px;
+}
+
+.green {
+  background-color: $myColor1;
+}
+
+.purple {
+  background-color: $myColor2;
+}
+
+.blue {
+  background-color: $myColor3;
+}
