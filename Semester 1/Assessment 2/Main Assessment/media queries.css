@@ -1,9 +1,6 @@
 /* iPad */
 @media (max-width: 768px) {
-    .nav-bar {
-        width: 5rem;
-        
-    }
+    
 }
 /* Google Pixel 2 */
 @media (max-width: 411px) {

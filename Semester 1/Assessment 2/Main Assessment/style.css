@@ -31,23 +31,6 @@ header {
     flex-wrap: wrap;
 }
 
-/* Logo */
-label.logo {
-    /* Text */
-    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
-    font-family: Fleur De Leah;
-    font-size: 3.375rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.84375rem;
-    /* Color */
-    background: linear-gradient(104deg, #025B00 12.98%, #00AD2B 49.04%, #00DB79 85.1%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .nav-bar ul {
     float: right;
     margin-right: 1.39dvw;
@@ -631,22 +614,4 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-
-/* Media queries */
-/* iPad */
-@media (max-width: 768px) {
-    
-}
-/* Google Pixel 2 */
-@media (max-width: 411px) {
-    
-}
-/* iPhone X */
-@media (max-width: 375px) {
-    
-}
-/* iPhone 4 */
-@media (max-width: 320px) {
-    
 }
