@@ -1,9 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+}
+
+:root {
+    font-size: 16px;
+    font-family: Inter;
 }
 
 ::-webkit-scrollbar {
@@ -21,19 +26,17 @@ body {
 /* Navigation Bar */
 header {
     width: 100%;
-    padding: 1.04dvh 7.85dvw 0 7.85dvw;
+    padding: 1rem 0 5rem 0;
 }
 
 .nav-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-bar ul {
     float: right;
-    margin-right: 1.39dvw;
 }
 
 .nav-bar ul li {
@@ -59,7 +62,7 @@ header {
 .nav-bar a.active {
     color: #278343;
     font-family: 'Canossa';
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 
@@ -73,16 +76,16 @@ header {
 /* Main - Left */
 .main-intro {
     flex-basis: 50%;
-    margin: 0 0 0 7.8dvw;
+    margin: 0 0 0 8dvw;
 }
 
-.beauty-lounge-container {
+.beauty-lounge-parent {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5dvw;
     max-width: fit-content;
-    padding-bottom: 1.6dvh;
+    padding-bottom: 1.5dvh;
 }
 
 .beauty-lounge {
@@ -95,15 +98,15 @@ header {
     letter-spacing: 0.1rem;
 }
 
-.slogan-container {
+.slogan-parent {
     color: #5C3E29;
     text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
-    font-size: 2.875rem;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.4rem;
-    padding-bottom: 4.1dvh;
+    padding-bottom: 4dvh;
 }
 
 .RnU {
@@ -112,8 +115,8 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    max-width: 39.4dvw;
-    padding-bottom: 6.2dvh;
+    max-width: 40dvw;
+    padding-bottom: 6dvh;
 }
 
 .cta-button {
@@ -134,35 +137,36 @@ header {
 }
 
 .cta-button-child {
-    max-width: 10.7dvw;
+    max-width: 10rem;
     margin: 0;
 }
 
 /* Main - Right */
 .main-images {
     flex-basis: 50%;
-    margin: 5dvh 7.84dvw 0 0;
     max-width: fit-content;
-    position: relative;
+    margin: 0 8dvw 0 0;
 }
 
 .entrance {
-    max-width: 34.7dvw;
-    max-height: 69.5dvh;
+    max-width: 35dvw;
+    max-height: 70dvh;
     border-radius: 0.9375rem;
     background: lightgray 50% / cover no-repeat;
     box-shadow: 6px 6px 1px 0px rgba(0, 0, 0, 0.25), 6px 6px 30px 0px rgba(255, 255, 255, 0.25) inset;
 }
 
 .tash-logo {
-    max-width: 27.8dvw;
-    max-height: 26.2dvh;
+    /* Position */
+    position: absolute;
+    top: 60dvh;
+    right: 24dvw;
+    /* Style */
+    max-width: 28dvw;
+    max-height: 26dvh;
     border-radius: 15px;
     background: lightgray -98.361px -158.033px / 147.869% 250.556% no-repeat;
     box-shadow: 6px 6px 1px 0px rgba(0, 0, 0, 0.25), 6px 6px 30px 0px #C19146 inset;
-    position: absolute;
-    top: 53dvh;
-    right: 13.84dvw;
 }
 
 
@@ -172,9 +176,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5625rem;
+    gap: 1.5rem;
     max-width: fit-content;
-    margin: 18dvh 0 1.8dvh 38.8dvw;
+    margin: 18dvh 0 2dvh 39dvw;
     /* Text */
     color: #54433A;
     text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
@@ -185,16 +189,17 @@ header {
     letter-spacing: 0.1125rem;
 }
 
-.wat-container {
+.wat-parent {
     /* Positioning */
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     max-width: 73dvw;
-    margin: 0.2rem auto;
+    margin: auto;
     /* Text */
     color: #000;
-    font-size: 2.125rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -209,25 +214,23 @@ header {
 .carousel {
     width: 100%;
     overflow: hidden;
-    position: relative;
-    top: 6.7dvh
+    margin-top: 7dvh
 }
 
-.slide-container {
+.slide-parent {
     display: flex;
     align-items: flex-start;
     gap: 2.8dvw;
     animation: slide 15s infinite linear;
 }
 
-.slide-container img {
+.slide-parent img {
     /* Position */
-    width: 22.2dvw;
-    height: 53.3dvh;
+    width: 22dvw;
+    height: 53dvh;
     object-fit: cover;
     /* Style */
     border-radius: 15px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
     box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -242,11 +245,13 @@ header {
 }
 
 /* Services page */
+.services-page {
+    margin: 15dvh 0 0 8dvw;
+}
 .beauty-massages {
     /* Position */
     display: flex;
     align-items: center;
-    margin: 15dvh 0 0 7.84dvw;
     /* Text */
     color: #54433A;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
@@ -260,7 +265,6 @@ header {
     /* Position */
     display: flex;
     align-items: center;
-    margin: 0 0 0 7.8dvw;
     /* Text */
     background: linear-gradient(90deg, #278343 0%, #469E5C 49.48%, #62BB76 100%);
     background-clip: text;
@@ -268,7 +272,7 @@ header {
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
     font-family: Canossa;
-    font-size: 2.625rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -278,8 +282,8 @@ header {
     /* Position */
     display: flex;
     align-items: center;
-    max-width: 33.2dvw;
-    margin: 1.9dvh 0 0 7.8dvw;
+    max-width: 33dvw;
+    margin: 1dvh 0 0 0;
     /* Text */
     color: #000;
     font-size: 1rem;
@@ -291,21 +295,21 @@ header {
 .image-6 {
     /* Position */
     position: absolute;
-    top: 190dvh;
+    top: 185dvh;
     right: 0dvw;
     /* Style */
     opacity: 0.4;
-    width: 48.6dvw;
-    height: 97.3dvh;
+    width: 50dvw;
+    height: 100dvh;
 }
 
 .service-tabs {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 40px;
-    max-width: 50.9dvw;
-    margin: 6.7dvh 0 0 7.8dvw;
+    gap: 2.8dvw;
+    max-width: fit-content;
+    margin: 7dvh 0 0 0;
 }
 
 .service-tabs-beauty {
@@ -483,7 +487,7 @@ header {
 }
 
 /* Appointment page */
-.appointment-container {
+.appointment-parent {
     /* Position */
     display: flex;
     align-items: center;
