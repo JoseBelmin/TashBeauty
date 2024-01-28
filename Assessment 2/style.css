@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    font-size: 16px;
+    font-family: Inter;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./Tash\ Beauty\ Salon/BG.png);
+    font-family: Inter;
+}
+
+/* Landing page */
+/* Navigation Bar */
+header {
+    width: 100%;
+    padding: 1rem 0 5rem 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar ul {
+    float: right;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    line-height: normal;
+    margin: 0 5dvw 0 0;
+}
+
+.nav-bar ul li a {
+    color: #000000;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.nav-bar ul li:last-child {
+    margin-right: 0;
+}
+
+.nav-bar a.active {
+    color: #278343;
+    font-family: 'Canossa';
+    font-size: 1.5rem;
+}
+
+
+/* Main */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Main - Left */
+.main-intro {
+    flex-basis: 50%;
+    margin: 0 0 0 8dvw;
+}
+
+.beauty-lounge-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5dvw;
+    max-width: fit-content;
+    padding-bottom: 1.5dvh;
+}
+
+.beauty-lounge {
+    color: #54433A;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+}
+
+.slogan-parent {
+    color: #5C3E29;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+    padding-bottom: 4dvh;
+}
+
+.RnU {
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 40dvw;
+    padding-bottom: 6dvh;
+}
+
+.cta-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+}
+
+.contact-us {
+    color: #54433A;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+}
+
+.cta-button-child {
+    max-width: 10rem;
+    margin: 0;
+}
+
+/* Main - Right */
+.main-images {
+    flex-basis: 50%;
+    max-width: fit-content;
+    margin: 0 8dvw 0 0;
+}
+
+.entrance {
+    max-width: 35dvw;
+    max-height: 70dvh;
+    border-radius: 0.9375rem;
+    background: lightgray 50% / cover no-repeat;
+    box-shadow: 6px 6px 1px 0px rgba(0, 0, 0, 0.25), 6px 6px 30px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.tash-logo {
+    /* Position */
+    position: absolute;
+    top: 60dvh;
+    right: 24dvw;
+    /* Style */
+    max-width: 28dvw;
+    max-height: 26dvh;
+    border-radius: 15px;
+    background: lightgray -98.361px -158.033px / 147.869% 250.556% no-repeat;
+    box-shadow: 6px 6px 1px 0px rgba(0, 0, 0, 0.25), 6px 6px 30px 0px #C19146 inset;
+}
+
+
+/* Description page */
+.tag {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    max-width: fit-content;
+    margin: 18dvh 0 2dvh 39dvw;
+    /* Text */
+    color: #54433A;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.25);
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.1125rem;
+}
+
+.wat-parent {
+    /* Positioning */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 73dvw;
+    margin: auto;
+    /* Text */
+    color: #000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.green-text {
+    color: #278343;
+    font-family: Canossa;
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 7dvh
+}
+
+.slide-parent {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.8dvw;
+    animation: slide 15s infinite linear;
+}
+
+.slide-parent img {
+    /* Position */
+    width: 22dvw;
+    height: 53dvh;
+    object-fit: cover;
+    /* Style */
+    border-radius: 15px;
+    box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Services page */
+.services-page {
+    margin: 15dvh 0 0 8dvw;
+}
+.beauty-massages {
+    /* Position */
+    display: flex;
+    align-items: center;
+    /* Text */
+    color: #54433A;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.fya {
+    /* Position */
+    display: flex;
+    align-items: center;
+    /* Text */
+    background: linear-gradient(90deg, #278343 0%, #469E5C 49.48%, #62BB76 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+    font-family: Canossa;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.wst {
+    /* Position */
+    display: flex;
+    align-items: center;
+    max-width: 33dvw;
+    margin: 1dvh 0 0 0;
+    /* Text */
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.image-6 {
+    /* Position */
+    position: absolute;
+    top: 185dvh;
+    right: 0dvw;
+    /* Style */
+    opacity: 0.4;
+    width: 50dvw;
+    height: 100dvh;
+}
+
+.service-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.8dvw;
+    max-width: fit-content;
+    margin: 7dvh 0 0 0;
+}
+
+.service-tabs-beauty {
+    /* Position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Box */
+    color: #fff;
+    border-radius: 1.875rem 1.875rem 1.875rem 0px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: linear-gradient(114deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0 1.25rem 2.5rem 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.16rem);
+}
+
+.butterfly-icon {
+    display: flex;
+    align-items: center;
+    max-width: 2.8dvw;
+    margin: 1.3dvh 1.53dvw 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.beauty-text {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7dvh;
+    padding: 11.6dvh 1.53dvw 5.44dvh 1.53dvw;
+}
+
+.beauty-center {
+    /* Beauty */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* Center */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.look-your-best {
+    /* Text */
+    max-width: 10.83dvw;
+    color: #000;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service-tabs-massage {
+    /* Position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Box */
+    color: #fff;
+    border-radius: 1.875rem 1.875rem 1.875rem 0px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: linear-gradient(114deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0 1.25rem 2.5rem 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.16rem);
+}
+
+.oil-massage-icon {
+    display: flex;
+    align-items: center;
+    max-width: 2.8dvw;
+    margin: 1.3dvh 1.53dvw 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.oil-massage-text {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7dvh;
+    padding: 13.266dvh 1.53dvw 5.44dvh 1.53dvw;
+}
+
+.massage-center {
+    /* Massage */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* Center */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feel-relaxed-and {
+    /* Text */
+    max-width: 10.83dvw;
+    color: #000;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.service-tabs-spa {
+    /* Position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Box */
+    color: #fff;
+    border-radius: 1.875rem 1.875rem 1.875rem 0px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background: linear-gradient(114deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.20) 100%);
+    box-shadow: 0 1.25rem 2.5rem 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(0.16rem);
+}
+
+.stone-spa-flower {
+    display: flex;
+    align-items: center;
+    max-width: 2.8dvw;
+    margin: 1.3dvh 1.53dvw 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.stone-spa-text {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    gap: 1.7dvh;
+    padding: 11.6dvh 1.53dvw 5.44dvh 1.53dvw;
+}
+
+.spa-center {
+    /* Spa */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* Center */
+    color: #54433A;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.unwind-and-separate {
+    /* Text */
+    max-width: 10.83dvw;
+    color: #000;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Appointment page */
+.appointment-parent {
+    /* Position */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35dvh;
+    /* Text */
+    color: #278343;
+    text-align: center;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+    font-family: Canossa;
+    font-size: 5.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.call {
+    /* Position */
+    display: flex;
+    width: 52.7dvw;
+    height: 19.6dvh;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.1dvh 23.75dvw 0 23.75dvw;
+    /* Text */
+    color: #FFEFD3;
+    text-align: center;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Contact button */
+.circle-text {
+    /* Position */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+text {
+    /* Text */
+    fill: #FFEFD3;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.375rem;
+    /* Animation */
+    animation: rotate 25s linear infinite;
+    transform-origin: 17.4dvw 27.8dvh;
+}
+
+svg {
+    max-width: 20dvw;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2dvh;
+    width: 10dvw;
+    height: 16dvh;
+    border-radius: 50%;
+    background-color: #FFD2B1;
+}
+
+.contact {
+    /* Text */
+    color: #00321F;
+    text-align: center;
+    font-family: Canossa;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/* Contact number and address */
+.tash-beauty-lounge {
+    color: #FFEFD3;
+    text-align: center;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.25);
+    font-family: Canossa;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7.6dvh 7.85dvw 0 7.85dvw;
+}
+
+.copyright {
+    /* Text */
+    color: #FFEFD3;
+    text-align: center;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.icons {
+    margin: 0 22dvw 0 8dvw;
+}
+
+.site-by {
+    color: #FFEFD3;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

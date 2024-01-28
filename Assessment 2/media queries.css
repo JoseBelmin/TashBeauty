@@ -1,0 +1,241 @@
+/* iPad */
+@media (max-width: 768px) {
+    .assessment-2{
+        margin-bottom: 5rem;
+    }
+    /* Landing page */
+    header {
+        margin-bottom: 2dvh;
+    }
+    .main-intro {
+        margin: 0 0 0 3dvw;
+    }
+    .slogan-parent {
+        font-size: 2rem;
+        padding-bottom: 2dvh;
+    }
+    .RnU {
+        font-size: 1rem;
+        padding-bottom: 3dvh;
+    }
+    .main-images {
+        margin-right: 3dvw;
+    }
+    .tash-logo {
+        /* Position */
+        top: 33dvh;
+        right: 20dvw;
+    }
+    /* Description page */
+    .tag {
+        margin: 18dvh 0 2dvh 29dvw;
+    }
+    .wat-parent {
+        font-size: 1.5rem;
+    }
+    /* Services page */
+    .services-page {
+        margin: 15dvh 0 0 4dvw;
+    }
+    .beauty-massages {
+        font-size: 2rem;
+    }
+    .fya {
+        font-size: 3rem;
+    }
+    .image-6 {
+        /* Position */
+        position: absolute;
+        top: 175dvh;
+        right: 0dvw;
+        /* Style */
+        opacity: 0.4;
+        width: 60dvw;
+        height: 60dvh;
+    }
+    .beauty-text {
+        padding: 8dvh 2dvw 4dvh 5dvw;
+    }
+    .look-your-best {
+        max-width: 20dvw;
+    }
+    .oil-massage-text {
+        padding: 11dvh 2dvw 4dvh 5dvw;
+    }
+    .feel-relaxed-and {
+        max-width: 20dvw;
+    }
+    .stone-spa-text {
+        padding: 9.7dvh 2dvw 4dvh 5dvw;
+    }
+    .unwind-and-separate {
+        max-width: 20dvw;
+    }
+    /* Appointment page */
+    .appointment-parent {
+        font-size: 4rem;
+    }
+    .call {
+        font-size: 1.25rem;
+    }
+    text {
+        display: none;
+    }
+    .button {
+        width: 20dvw;
+        height: 15dvh;
+    }
+    .tash-beauty-lounge {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    footer {
+        display: none;
+    }
+}
+/* Google Pixel 2 */
+@media (max-width: 411px) {
+    .main {
+        flex-direction: column;
+    }
+    .nav-bar ul li a, .nav-bar a:active{
+        font-size: 1rem;
+    }
+    .beauty-lounge {
+        font-size: 0.75rem;
+    }
+    .slogan-parent {
+        font-size: 2rem;
+    }
+    .RnU {
+        font-size: 0.75rem;
+        max-width: 70dvw;
+    }
+    .main-images {
+        display: none;
+    }
+    .tag {
+        margin: 10dvh 15dvw 2dvh 15dvw;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+    .wat-parent {
+        font-size: 1.25rem;
+    }
+    .slide-parent img {
+        /* Position */
+        width: 25dvw;
+        height: 25dvh;
+        /* Style */
+        border-radius: 10px;
+    }
+    .services-page {
+        margin: 10dvh 0 0 4dvw;
+    }
+    .beauty-massages {
+        font-size: 1.25rem;
+    }
+    .fya {
+        font-size: 2rem;
+    }
+    .wst {
+        font-size: 0.75rem;
+        max-width: 60dvw;
+    }
+    .image-6 {
+        /* Position */
+        position: absolute;
+        top: 160dvh;
+        right: 0dvw;
+        /* Style */
+        width: 100dvw;
+        height: fit-content;
+        
+    }
+    .beauty-text {
+        padding: 8dvh 1dvw 4dvh 3dvw;
+    }
+    .look-your-best {
+        max-width: 25dvw;
+    }
+
+    .oil-massage-text {
+        padding: 12dvh 1dvw 4dvh 3dvw;
+    }
+    .feel-relaxed-and {
+        max-width: 25dvw;
+    }
+    
+    .stone-spa-text {
+        padding: 6dvh 1dvw 4dvh 3dvw;
+    }
+    .unwind-and-separate {
+        max-width: 25dvw;
+    }
+    .appointment-parent {
+        font-size: 3rem;
+        margin-top: 20dvh;
+    }
+    .call {
+        font-size: 1rem;
+    }
+    .button {
+        width: 20dvw;
+        height: 10dvh;
+    }
+    .contact {
+        font-size: 1.25rem;
+    }
+    img.line-icon {
+        display: none;
+    }
+    .tash-beauty-lounge {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}
+/* iPhone X */
+@media (max-width: 375px) {
+    .appointment-parent {
+        font-size: 2.5rem;
+        margin-top: 15dvh;
+    }
+    .call {
+        margin: 2dvh 25dvw 3dvh 25dvw;
+    }
+    .button {
+        width: 20dvw;
+        height: 9.5dvh;
+    }
+}
+/* iPhone 4 */
+@media (max-width: 320px) {
+    .tag {
+        margin: 10dvh 11vw 2dvh 11dvw;
+        font-size: 0.75rem;
+        gap: 0.5rem;
+    }
+    .appointment-parent {
+        font-size: 2.5rem;
+        margin-top: 5dvh;
+    }
+    .call {
+        font-size: 0.75rem;
+        margin: 5dvh 25dvw 3dvh 25dvw;
+    }
+    .button {
+        width: 20dvw;
+        height: 13dvh;
+    }
+    .contact {
+        font-size: 1rem;
+    }
+    img.line-icon {
+        display: none;
+    }
+    .tash-beauty-lounge {
+        font-size: 0.75rem;
+        margin-top: 2rem;
+    }
+    
+}
